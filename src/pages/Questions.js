@@ -4,7 +4,7 @@
     {
         question: "What is a Variable in JavaScript?",
         answers: [
-            { text: "A section of the webpage", correct: false },
+            { text:  "A section of the webpage", correct: false },
             { text: "A container for storing data values", correct: true },
             { text: "A type of JavaScript function", correct: false },
             { text: "An operation in mathematics", correct: false }

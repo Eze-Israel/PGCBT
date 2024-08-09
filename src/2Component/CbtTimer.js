@@ -1,14 +1,14 @@
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
 
-const CbtTimer = () => {
+const CbtTimer = ({ handleSubmit }) => {
 	// We need ref in this, because we are dealing
 	// with JS setInterval to keep track of it and
 	// stop it when needed
 	const Ref = useRef(null);
 
 	// The state for our timer
-	const [timer, setTimer] = useState("00:00:00");
+	const [timer, setTimer] = useState("00:01:20");
 
 	const getTimeRemaining = (e) => {
 		const total =
@@ -68,9 +68,14 @@ const CbtTimer = () => {
 	const getDeadTime = () => {
 		let deadline = new Date();
 		deadline.setSeconds(deadline.getSeconds() + 20);
-		deadline.setMinutes(deadline.getMinutes() + 0);
+		deadline.setMinutes(deadline.getMinutes() + 1);
 		return deadline;
 	};
+
+	useEffect(() => {
+			clearTimer(getDeadTime());
+		
+	}, []);
 	
 	const handleStart = () => {
 		clearTimer(getDeadTime());
@@ -84,23 +89,32 @@ const CbtTimer = () => {
 		clearTimer(" ")
 	};
 
-	const handleReset = ()=> {
+	const handlePause = ()=> {
 		startTimer(" ")
 		clearTimer(" ")
+	}
+
+	if (timer === "00:00:00") {
+		handleSubmit()
+		
+		
 	}
 
 	return (
 		<div
 			style={{ textAlign: "center", margin: "auto" }}>
-			<h1 style={{ color: "green" }}>
-				MY CBT APP
-			</h1>
-			<h3>Countdown Timer Using React JS</h3>
-            
+			{/* <h1 style={{ color: "green" }}>
+				MY Timer APP
+			</h1> */}
+			{/* <h3>Countdown Timer Using React JS</h3> */}
+            <div   style={{
+				textAlign: "right", marginRight:'30px',fontSize: '20px'
+			}}>
 			<h2>{timer}</h2>
-            <button onClick={handleStart}>Start</button> {''}
-            <button onClick={handleReset}>Reset</button> {''}
-			<button onClick={handleStop }>stop</button>
+            {/* <button onClick={handleStart}>Start</button> {''} */}
+            {/* <button onClick={handlePause }>Pause</button> {''} */}
+			{/* <button onClick={handleStop }>stop</button> */}
+			</div>
 		</div>
 	);
 };

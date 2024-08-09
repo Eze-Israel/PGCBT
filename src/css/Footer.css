@@ -1,0 +1,39 @@
+.Foot{
+    padding: 0 50px;
+    box-shadow: 2px 2px 1px 1px aliceblue;
+    border-top: 2px solid gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.FootInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.Header{
+    box-shadow: 2px 2px 1px 1px aliceblue;
+    background-color: rgb(136, 206, 206);
+    align-items: center;
+    
+}
+.date{
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+
+@media screen and (max-width:950px) {
+
+    .FootInfo{
+     text-align: center;
+        flex-direction: column;
+    }
+    .Foot{
+        padding: 0 20px;
+    }
+    .date{
+        text-align: center;
+        font-size: larger;
+    }
+}
