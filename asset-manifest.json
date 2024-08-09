@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PGCBT/static/css/main.bff4239d.css",
+    "main.js": "/PGCBT/static/js/main.d9e2f9f8.js",
+    "index.html": "/PGCBT/index.html",
+    "main.bff4239d.css.map": "/PGCBT/static/css/main.bff4239d.css.map",
+    "main.d9e2f9f8.js.map": "/PGCBT/static/js/main.d9e2f9f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bff4239d.css",
+    "static/js/main.d9e2f9f8.js"
+  ]
+}
