@@ -111,7 +111,7 @@ const CbtTimer = ({ handleSubmit }) => {
 				textAlign: "right", marginRight:'30px',fontSize: '20px'
 			}}>
 			<h2>{timer}</h2>
-            {/* <button onClick={handleStart}>Start</button> {''} */}
+            {/* <button onClick={handleStart}>Start</button> */}
             {/* <button onClick={handlePause }>Pause</button> {''} */}
 			{/* <button onClick={handleStop }>stop</button> */}
 			</div>

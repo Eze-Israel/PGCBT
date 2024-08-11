@@ -54,6 +54,7 @@ const handlePrevious = () => {
 
 const handleSubmit = () => {
   setShowResults(true);
+  
  
 };
 
@@ -61,7 +62,7 @@ const handleSubmit = () => {
 
   return (
     <>
-    <div><button onClick={handleStart}  className={ 'show'}>Refresh Test</button></div>
+    <div><button onClick={handleStart}  className={  "show"}>Refresh Test</button></div>
     
     <div className="test-app" ref={startRef} style={{
       display: 'none', minHeight:"70vh"
@@ -77,7 +78,7 @@ const handleSubmit = () => {
     ):(
       <div>
        <h1>Question {currentQuestion + 1} </h1>
-       <p style={{fontSize:"20PX", textAlign:"center"}}>{questions[currentQuestion].question} </p>
+       <p style={{fontSize:"20px", textAlign:"center"}}>{questions[currentQuestion].question} </p>
        {questions[currentQuestion].answers.map((answer, index)=> (
         <button key={index} onClick={() => handleAnswer(answer)} style={{ backgroundColor:
           selectedAnswer === answer ? "#a06" : "",
