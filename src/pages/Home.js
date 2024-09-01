@@ -2,10 +2,13 @@ import "../css/Home.css"
 import { useState,useRef } from "react"
 import questions from "../pages/Questions"
 import CbtTimer from "../2Component/CbtTimer"
+import Footer from "../2Component/Footer"
+import Header from "../2Component/Header"
+import HeaderLog from "../components/HeaderLog.jsx";
 
 
 
-const Home = () => {
+const Home = ({}) => {
 
 const [currentQuestion, setCurrentQuestion] = useState(0)
 const [score, setScore] = useState(0)
@@ -55,13 +58,19 @@ const handlePrevious = () => {
 const handleSubmit = () => {
   setShowResults(true);
   
+  
  
 };
+if (showResults ){
+  
+}
 
 
 
   return (
     <>
+    <HeaderLog />
+    <Header />
     <div><button onClick={handleStart}  className={  "show"}>Refresh Test</button></div>
     
     <div className="test-app" ref={startRef} style={{
@@ -105,6 +114,7 @@ const handleSubmit = () => {
 
 
     </div>
+    <Footer />
     </>
   )
 }

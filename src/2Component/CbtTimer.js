@@ -97,8 +97,8 @@ const CbtTimer = ({ handleSubmit }) => {
 	if (timer === "00:00:00") {
 		handleSubmit()
 		
-		
 	}
+	
 
 	return (
 		<div
