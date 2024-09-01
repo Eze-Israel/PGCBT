@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/PGCBT/static/css/main.bff4239d.css",
-    "main.js": "/PGCBT/static/js/main.bc013e96.js",
+    "main.css": "/PGCBT/static/css/main.c20c038c.css",
+    "main.js": "/PGCBT/static/js/main.b172fbe9.js",
     "index.html": "/PGCBT/index.html",
-    "main.bff4239d.css.map": "/PGCBT/static/css/main.bff4239d.css.map",
-    "main.bc013e96.js.map": "/PGCBT/static/js/main.bc013e96.js.map"
+    "main.c20c038c.css.map": "/PGCBT/static/css/main.c20c038c.css.map",
+    "main.b172fbe9.js.map": "/PGCBT/static/js/main.b172fbe9.js.map"
   },
   "entrypoints": [
-    "static/css/main.bff4239d.css",
-    "static/js/main.bc013e96.js"
+    "static/css/main.c20c038c.css",
+    "static/js/main.b172fbe9.js"
   ]
 }
